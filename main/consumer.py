@@ -4,7 +4,7 @@ from database import db
 from main import app
 
 try:
-    params = pika.URLParameters('amqps://edoubgdl:JCEWuKDUzNJ6h0iR_ilmuRLuz4JpQRwH@armadillo.rmq.cloudamqp.com/edoubgdl')
+    params = pika.URLParameters(<YOUR_AMQP_URL>)
     connection = pika.BlockingConnection(params)
 
     chanel = connection.channel()
